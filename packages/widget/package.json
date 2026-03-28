@@ -1,0 +1,25 @@
+{
+  "name": "@waitlist/widget",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/waitlist-widget.umd.cjs",
+  "module": "dist/waitlist-widget.js",
+  "exports": {
+    ".": {
+      "import": "./dist/waitlist-widget.js",
+      "require": "./dist/waitlist-widget.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@waitlist/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  }
+}
