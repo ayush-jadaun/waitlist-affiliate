@@ -1,0 +1,25 @@
+{
+  "name": "waitlist-referral",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "test:unit": "turbo run test:unit",
+    "test:integration": "turbo run test:integration",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean",
+    "db:generate": "turbo run db:generate --filter=@waitlist/api",
+    "db:migrate": "turbo run db:migrate --filter=@waitlist/api",
+    "db:studio": "turbo run db:studio --filter=@waitlist/api"
+  },
+  "devDependencies": {
+    "turbo": "^2.8.21"
+  }
+}
