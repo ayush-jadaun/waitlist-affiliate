@@ -5,6 +5,7 @@ import { createDb } from "./db/index.js";
 import { createRedis } from "./lib/redis.js";
 import { registerJwt } from "./middleware/jwt.js";
 import { registerRoutes } from "./routes/index.js";
+import { registerWorkers } from "./workers/index.js";
 
 const databaseUrl = process.env.DATABASE_URL;
 const redisUrl = process.env.REDIS_URL;
@@ -38,6 +39,8 @@ await app.register(rateLimit, { max: 100, timeWindow: "1 minute", redis });
 await registerJwt(app, jwtSecret);
 await registerRoutes(app);
 
+const { closeAll: closeWorkers } = registerWorkers(db, redis);
+
 // Graceful shutdown
 let shuttingDown = false;
 
@@ -58,6 +61,7 @@ const shutdown = async () => {
   }, 30_000);
 
   try {
+    await closeWorkers();
     await app.close();
     await redis.quit();
     clearTimeout(timer);

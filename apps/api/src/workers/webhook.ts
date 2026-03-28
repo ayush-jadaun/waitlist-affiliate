@@ -4,7 +4,7 @@ import type { Database } from "../db/index.js";
 import { webhookEndpoints } from "../db/schema.js";
 import { WebhookService, signPayload } from "../services/webhook.js";
 
-interface WebhookJobData {
+export interface WebhookJobData {
   eventId: string;
   projectId: string;
   type: string;
