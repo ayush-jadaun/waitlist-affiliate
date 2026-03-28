@@ -6,5 +6,13 @@ export default defineConfig({
     environment: "node",
     include: ["src/__tests__/**/*.integration.test.ts"],
     testTimeout: 30_000,
+    // Run test files serially to avoid DB conflicts
+    fileParallelism: false,
+    pool: "forks",
+    poolOptions: {
+      forks: {
+        singleFork: true,
+      },
+    },
   },
 });
