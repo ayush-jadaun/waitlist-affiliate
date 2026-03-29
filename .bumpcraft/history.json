@@ -1,0 +1,1238 @@
+[
+  {
+    "version": "api@0.2.0",
+    "previousVersion": "api@0.1.0",
+    "date": "2026-03-29T18:55:05.537Z",
+    "commits": [
+      {
+        "hash": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4",
+        "type": "docs",
+        "scope": null,
+        "subject": "add per-package README files",
+        "body": null,
+        "breaking": false,
+        "raw": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4 docs: add per-package README files"
+      },
+      {
+        "hash": "51528e865a93ded467680177a1ce03387e305bbc",
+        "type": "docs",
+        "scope": null,
+        "subject": "add README, LICENSE (Apache 2.0), and CHANGELOG",
+        "body": null,
+        "breaking": false,
+        "raw": "51528e865a93ded467680177a1ce03387e305bbc docs: add README, LICENSE (Apache 2.0), and CHANGELOG"
+      },
+      {
+        "hash": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047",
+        "type": "fix",
+        "scope": null,
+        "subject": "run integration tests serially to avoid DB/Redis conflicts",
+        "body": null,
+        "breaking": false,
+        "raw": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047 fix: run integration tests serially to avoid DB/Redis conflicts"
+      },
+      {
+        "hash": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc",
+        "type": "test",
+        "scope": null,
+        "subject": "add comprehensive integration test suite",
+        "body": null,
+        "breaking": false,
+        "raw": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc test: add comprehensive integration test suite"
+      },
+      {
+        "hash": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434",
+        "type": "feat",
+        "scope": null,
+        "subject": "add vitest integration test config",
+        "body": null,
+        "breaking": false,
+        "raw": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434 feat: add vitest integration test config"
+      },
+      {
+        "hash": "9fb8127850bb40fd4391994cb73d73f18ad7e52a",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Dockerfile and Docker Compose production config",
+        "body": null,
+        "breaking": false,
+        "raw": "9fb8127850bb40fd4391994cb73d73f18ad7e52a feat: add Dockerfile and Docker Compose production config"
+      },
+      {
+        "hash": "a3eedf76a0c41f075d84b972509d5821b6c7b004",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)",
+        "body": null,
+        "breaking": false,
+        "raw": "a3eedf76a0c41f075d84b972509d5821b6c7b004 feat: add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)"
+      },
+      {
+        "hash": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)",
+        "body": null,
+        "breaking": false,
+        "raw": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe feat: add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)"
+      },
+      {
+        "hash": "9e3356470d8d3346f118ab23105d03ae1218e79c",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/widget drop-in embeddable script",
+        "body": null,
+        "breaking": false,
+        "raw": "9e3356470d8d3346f118ab23105d03ae1218e79c feat: add @waitlist/widget drop-in embeddable script"
+      },
+      {
+        "hash": "4d04b91508881786b8d534a1d9be6e9793cd4bfd",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/sdk headless client package",
+        "body": null,
+        "breaking": false,
+        "raw": "4d04b91508881786b8d534a1d9be6e9793cd4bfd feat: add @waitlist/sdk headless client package"
+      },
+      {
+        "hash": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin analytics endpoints (overview, timeseries, cohorts, channels)",
+        "body": null,
+        "breaking": false,
+        "raw": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb feat: add admin analytics endpoints (overview, timeseries, cohorts, channels)"
+      },
+      {
+        "hash": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin endpoints for subscribers, rewards, webhooks, experiments",
+        "body": null,
+        "breaking": false,
+        "raw": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06 feat: add admin endpoints for subscribers, rewards, webhooks, experiments"
+      },
+      {
+        "hash": "2347529888baef5e3e413e38bcc27dc887d84f6e",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin auth (setup/login) and project CRUD endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "2347529888baef5e3e413e38bcc27dc887d84f6e feat: add admin auth (setup/login) and project CRUD endpoints"
+      },
+      {
+        "hash": "0a96268eba8ea3ad3fc4650c96552f73a037a971",
+        "type": "feat",
+        "scope": null,
+        "subject": "add BullMQ workers for analytics, webhook dispatch, and position recalc",
+        "body": null,
+        "breaking": false,
+        "raw": "0a96268eba8ea3ad3fc4650c96552f73a037a971 feat: add BullMQ workers for analytics, webhook dispatch, and position recalc"
+      },
+      {
+        "hash": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5",
+        "type": "feat",
+        "scope": null,
+        "subject": "add webhook signing, delivery service, and dispatch worker",
+        "body": null,
+        "breaking": false,
+        "raw": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5 feat: add webhook signing, delivery service, and dispatch worker"
+      },
+      {
+        "hash": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9",
+        "type": "feat",
+        "scope": null,
+        "subject": "add leaderboard and stats public endpoints with Redis caching",
+        "body": null,
+        "breaking": false,
+        "raw": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9 feat: add leaderboard and stats public endpoints with Redis caching"
+      },
+      {
+        "hash": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0",
+        "type": "feat",
+        "scope": null,
+        "subject": "add referral tracking, position bumping, and reward unlock logic",
+        "body": null,
+        "breaking": false,
+        "raw": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0 feat: add referral tracking, position bumping, and reward unlock logic"
+      },
+      {
+        "hash": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff",
+        "type": "feat",
+        "scope": null,
+        "subject": "add waitlist service, event emitter, and subscribe endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff feat: add waitlist service, event emitter, and subscribe endpoints"
+      },
+      {
+        "hash": "b0784c486401ec08dde58ab755da4f884d1c9092",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Fastify server with Redis, BullMQ, API key and JWT middleware",
+        "body": null,
+        "breaking": false,
+        "raw": "b0784c486401ec08dde58ab755da4f884d1c9092 feat: add Fastify server with Redis, BullMQ, API key and JWT middleware"
+      },
+      {
+        "hash": "4126692f12ee7b2e04d2239511a67595a480fabe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add database schema with all tables and drizzle config",
+        "body": null,
+        "breaking": false,
+        "raw": "4126692f12ee7b2e04d2239511a67595a480fabe feat: add database schema with all tables and drizzle config"
+      },
+      {
+        "hash": "6d0231da69eec73f1a21634fa5fc23abd7dac493",
+        "type": "feat",
+        "scope": null,
+        "subject": "add shared types, validation schemas, and constants",
+        "body": null,
+        "breaking": false,
+        "raw": "6d0231da69eec73f1a21634fa5fc23abd7dac493 feat: add shared types, validation schemas, and constants"
+      },
+      {
+        "hash": "0ab7faaf3793019d456904c5ee70dfca78b0d188",
+        "type": "feat",
+        "scope": null,
+        "subject": "scaffold monorepo with shared package and api app",
+        "body": null,
+        "breaking": false,
+        "raw": "0ab7faaf3793019d456904c5ee70dfca78b0d188 feat: scaffold monorepo with shared package and api app"
+      }
+    ],
+    "changelogOutput": "## [0.2.0]() (2026-03-29)\n\n### 🚀 Features\n\n- add vitest integration test config (5ee2f26)\n- add Dockerfile and Docker Compose production config (9fb8127)\n- add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings) (a3eedf7)\n- add @waitlist/react components (WaitlistForm, ReferralStatus, Provider) (8285ffb)\n- add @waitlist/widget drop-in embeddable script (9e33564)\n- add @waitlist/sdk headless client package (4d04b91)\n- add admin analytics endpoints (overview, timeseries, cohorts, channels) (ad5dfec)\n- add admin endpoints for subscribers, rewards, webhooks, experiments (5dd4f6f)\n- add admin auth (setup/login) and project CRUD endpoints (2347529)\n- add BullMQ workers for analytics, webhook dispatch, and position recalc (0a96268)\n- add webhook signing, delivery service, and dispatch worker (a80e04b)\n- add leaderboard and stats public endpoints with Redis caching (7951d40)\n- add referral tracking, position bumping, and reward unlock logic (9bc4adc)\n- add waitlist service, event emitter, and subscribe endpoints (06e31b3)\n- add Fastify server with Redis, BullMQ, API key and JWT middleware (b0784c4)\n- add database schema with all tables and drizzle config (4126692)\n- add shared types, validation schemas, and constants (6d0231d)\n- scaffold monorepo with shared package and api app (0ab7faa)\n\n### 🐛 Bug Fixes\n\n- run integration tests serially to avoid DB/Redis conflicts (5cfa9e2)\n\n### 📚 Documentation\n\n- add per-package README files (a0cc609)\n- add README, LICENSE (Apache 2.0), and CHANGELOG (51528e8)\n\n### ✅ Tests\n\n- add comprehensive integration test suite (4a1b8f5)\n"
+  },
+  {
+    "version": "admin@0.2.0",
+    "previousVersion": "admin@0.1.0",
+    "date": "2026-03-29T18:55:05.438Z",
+    "commits": [
+      {
+        "hash": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4",
+        "type": "docs",
+        "scope": null,
+        "subject": "add per-package README files",
+        "body": null,
+        "breaking": false,
+        "raw": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4 docs: add per-package README files"
+      },
+      {
+        "hash": "51528e865a93ded467680177a1ce03387e305bbc",
+        "type": "docs",
+        "scope": null,
+        "subject": "add README, LICENSE (Apache 2.0), and CHANGELOG",
+        "body": null,
+        "breaking": false,
+        "raw": "51528e865a93ded467680177a1ce03387e305bbc docs: add README, LICENSE (Apache 2.0), and CHANGELOG"
+      },
+      {
+        "hash": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047",
+        "type": "fix",
+        "scope": null,
+        "subject": "run integration tests serially to avoid DB/Redis conflicts",
+        "body": null,
+        "breaking": false,
+        "raw": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047 fix: run integration tests serially to avoid DB/Redis conflicts"
+      },
+      {
+        "hash": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc",
+        "type": "test",
+        "scope": null,
+        "subject": "add comprehensive integration test suite",
+        "body": null,
+        "breaking": false,
+        "raw": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc test: add comprehensive integration test suite"
+      },
+      {
+        "hash": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434",
+        "type": "feat",
+        "scope": null,
+        "subject": "add vitest integration test config",
+        "body": null,
+        "breaking": false,
+        "raw": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434 feat: add vitest integration test config"
+      },
+      {
+        "hash": "9fb8127850bb40fd4391994cb73d73f18ad7e52a",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Dockerfile and Docker Compose production config",
+        "body": null,
+        "breaking": false,
+        "raw": "9fb8127850bb40fd4391994cb73d73f18ad7e52a feat: add Dockerfile and Docker Compose production config"
+      },
+      {
+        "hash": "a3eedf76a0c41f075d84b972509d5821b6c7b004",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)",
+        "body": null,
+        "breaking": false,
+        "raw": "a3eedf76a0c41f075d84b972509d5821b6c7b004 feat: add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)"
+      },
+      {
+        "hash": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)",
+        "body": null,
+        "breaking": false,
+        "raw": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe feat: add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)"
+      },
+      {
+        "hash": "9e3356470d8d3346f118ab23105d03ae1218e79c",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/widget drop-in embeddable script",
+        "body": null,
+        "breaking": false,
+        "raw": "9e3356470d8d3346f118ab23105d03ae1218e79c feat: add @waitlist/widget drop-in embeddable script"
+      },
+      {
+        "hash": "4d04b91508881786b8d534a1d9be6e9793cd4bfd",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/sdk headless client package",
+        "body": null,
+        "breaking": false,
+        "raw": "4d04b91508881786b8d534a1d9be6e9793cd4bfd feat: add @waitlist/sdk headless client package"
+      },
+      {
+        "hash": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin analytics endpoints (overview, timeseries, cohorts, channels)",
+        "body": null,
+        "breaking": false,
+        "raw": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb feat: add admin analytics endpoints (overview, timeseries, cohorts, channels)"
+      },
+      {
+        "hash": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin endpoints for subscribers, rewards, webhooks, experiments",
+        "body": null,
+        "breaking": false,
+        "raw": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06 feat: add admin endpoints for subscribers, rewards, webhooks, experiments"
+      },
+      {
+        "hash": "2347529888baef5e3e413e38bcc27dc887d84f6e",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin auth (setup/login) and project CRUD endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "2347529888baef5e3e413e38bcc27dc887d84f6e feat: add admin auth (setup/login) and project CRUD endpoints"
+      },
+      {
+        "hash": "0a96268eba8ea3ad3fc4650c96552f73a037a971",
+        "type": "feat",
+        "scope": null,
+        "subject": "add BullMQ workers for analytics, webhook dispatch, and position recalc",
+        "body": null,
+        "breaking": false,
+        "raw": "0a96268eba8ea3ad3fc4650c96552f73a037a971 feat: add BullMQ workers for analytics, webhook dispatch, and position recalc"
+      },
+      {
+        "hash": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5",
+        "type": "feat",
+        "scope": null,
+        "subject": "add webhook signing, delivery service, and dispatch worker",
+        "body": null,
+        "breaking": false,
+        "raw": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5 feat: add webhook signing, delivery service, and dispatch worker"
+      },
+      {
+        "hash": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9",
+        "type": "feat",
+        "scope": null,
+        "subject": "add leaderboard and stats public endpoints with Redis caching",
+        "body": null,
+        "breaking": false,
+        "raw": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9 feat: add leaderboard and stats public endpoints with Redis caching"
+      },
+      {
+        "hash": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0",
+        "type": "feat",
+        "scope": null,
+        "subject": "add referral tracking, position bumping, and reward unlock logic",
+        "body": null,
+        "breaking": false,
+        "raw": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0 feat: add referral tracking, position bumping, and reward unlock logic"
+      },
+      {
+        "hash": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff",
+        "type": "feat",
+        "scope": null,
+        "subject": "add waitlist service, event emitter, and subscribe endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff feat: add waitlist service, event emitter, and subscribe endpoints"
+      },
+      {
+        "hash": "b0784c486401ec08dde58ab755da4f884d1c9092",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Fastify server with Redis, BullMQ, API key and JWT middleware",
+        "body": null,
+        "breaking": false,
+        "raw": "b0784c486401ec08dde58ab755da4f884d1c9092 feat: add Fastify server with Redis, BullMQ, API key and JWT middleware"
+      },
+      {
+        "hash": "4126692f12ee7b2e04d2239511a67595a480fabe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add database schema with all tables and drizzle config",
+        "body": null,
+        "breaking": false,
+        "raw": "4126692f12ee7b2e04d2239511a67595a480fabe feat: add database schema with all tables and drizzle config"
+      },
+      {
+        "hash": "6d0231da69eec73f1a21634fa5fc23abd7dac493",
+        "type": "feat",
+        "scope": null,
+        "subject": "add shared types, validation schemas, and constants",
+        "body": null,
+        "breaking": false,
+        "raw": "6d0231da69eec73f1a21634fa5fc23abd7dac493 feat: add shared types, validation schemas, and constants"
+      },
+      {
+        "hash": "0ab7faaf3793019d456904c5ee70dfca78b0d188",
+        "type": "feat",
+        "scope": null,
+        "subject": "scaffold monorepo with shared package and api app",
+        "body": null,
+        "breaking": false,
+        "raw": "0ab7faaf3793019d456904c5ee70dfca78b0d188 feat: scaffold monorepo with shared package and api app"
+      }
+    ],
+    "changelogOutput": "## [0.2.0]() (2026-03-29)\n\n### 🚀 Features\n\n- add vitest integration test config (5ee2f26)\n- add Dockerfile and Docker Compose production config (9fb8127)\n- add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings) (a3eedf7)\n- add @waitlist/react components (WaitlistForm, ReferralStatus, Provider) (8285ffb)\n- add @waitlist/widget drop-in embeddable script (9e33564)\n- add @waitlist/sdk headless client package (4d04b91)\n- add admin analytics endpoints (overview, timeseries, cohorts, channels) (ad5dfec)\n- add admin endpoints for subscribers, rewards, webhooks, experiments (5dd4f6f)\n- add admin auth (setup/login) and project CRUD endpoints (2347529)\n- add BullMQ workers for analytics, webhook dispatch, and position recalc (0a96268)\n- add webhook signing, delivery service, and dispatch worker (a80e04b)\n- add leaderboard and stats public endpoints with Redis caching (7951d40)\n- add referral tracking, position bumping, and reward unlock logic (9bc4adc)\n- add waitlist service, event emitter, and subscribe endpoints (06e31b3)\n- add Fastify server with Redis, BullMQ, API key and JWT middleware (b0784c4)\n- add database schema with all tables and drizzle config (4126692)\n- add shared types, validation schemas, and constants (6d0231d)\n- scaffold monorepo with shared package and api app (0ab7faa)\n\n### 🐛 Bug Fixes\n\n- run integration tests serially to avoid DB/Redis conflicts (5cfa9e2)\n\n### 📚 Documentation\n\n- add per-package README files (a0cc609)\n- add README, LICENSE (Apache 2.0), and CHANGELOG (51528e8)\n\n### ✅ Tests\n\n- add comprehensive integration test suite (4a1b8f5)\n"
+  },
+  {
+    "version": "widget@0.2.0",
+    "previousVersion": "widget@0.1.0",
+    "date": "2026-03-29T18:55:05.332Z",
+    "commits": [
+      {
+        "hash": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4",
+        "type": "docs",
+        "scope": null,
+        "subject": "add per-package README files",
+        "body": null,
+        "breaking": false,
+        "raw": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4 docs: add per-package README files"
+      },
+      {
+        "hash": "51528e865a93ded467680177a1ce03387e305bbc",
+        "type": "docs",
+        "scope": null,
+        "subject": "add README, LICENSE (Apache 2.0), and CHANGELOG",
+        "body": null,
+        "breaking": false,
+        "raw": "51528e865a93ded467680177a1ce03387e305bbc docs: add README, LICENSE (Apache 2.0), and CHANGELOG"
+      },
+      {
+        "hash": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047",
+        "type": "fix",
+        "scope": null,
+        "subject": "run integration tests serially to avoid DB/Redis conflicts",
+        "body": null,
+        "breaking": false,
+        "raw": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047 fix: run integration tests serially to avoid DB/Redis conflicts"
+      },
+      {
+        "hash": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc",
+        "type": "test",
+        "scope": null,
+        "subject": "add comprehensive integration test suite",
+        "body": null,
+        "breaking": false,
+        "raw": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc test: add comprehensive integration test suite"
+      },
+      {
+        "hash": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434",
+        "type": "feat",
+        "scope": null,
+        "subject": "add vitest integration test config",
+        "body": null,
+        "breaking": false,
+        "raw": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434 feat: add vitest integration test config"
+      },
+      {
+        "hash": "9fb8127850bb40fd4391994cb73d73f18ad7e52a",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Dockerfile and Docker Compose production config",
+        "body": null,
+        "breaking": false,
+        "raw": "9fb8127850bb40fd4391994cb73d73f18ad7e52a feat: add Dockerfile and Docker Compose production config"
+      },
+      {
+        "hash": "a3eedf76a0c41f075d84b972509d5821b6c7b004",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)",
+        "body": null,
+        "breaking": false,
+        "raw": "a3eedf76a0c41f075d84b972509d5821b6c7b004 feat: add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)"
+      },
+      {
+        "hash": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)",
+        "body": null,
+        "breaking": false,
+        "raw": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe feat: add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)"
+      },
+      {
+        "hash": "9e3356470d8d3346f118ab23105d03ae1218e79c",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/widget drop-in embeddable script",
+        "body": null,
+        "breaking": false,
+        "raw": "9e3356470d8d3346f118ab23105d03ae1218e79c feat: add @waitlist/widget drop-in embeddable script"
+      },
+      {
+        "hash": "4d04b91508881786b8d534a1d9be6e9793cd4bfd",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/sdk headless client package",
+        "body": null,
+        "breaking": false,
+        "raw": "4d04b91508881786b8d534a1d9be6e9793cd4bfd feat: add @waitlist/sdk headless client package"
+      },
+      {
+        "hash": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin analytics endpoints (overview, timeseries, cohorts, channels)",
+        "body": null,
+        "breaking": false,
+        "raw": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb feat: add admin analytics endpoints (overview, timeseries, cohorts, channels)"
+      },
+      {
+        "hash": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin endpoints for subscribers, rewards, webhooks, experiments",
+        "body": null,
+        "breaking": false,
+        "raw": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06 feat: add admin endpoints for subscribers, rewards, webhooks, experiments"
+      },
+      {
+        "hash": "2347529888baef5e3e413e38bcc27dc887d84f6e",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin auth (setup/login) and project CRUD endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "2347529888baef5e3e413e38bcc27dc887d84f6e feat: add admin auth (setup/login) and project CRUD endpoints"
+      },
+      {
+        "hash": "0a96268eba8ea3ad3fc4650c96552f73a037a971",
+        "type": "feat",
+        "scope": null,
+        "subject": "add BullMQ workers for analytics, webhook dispatch, and position recalc",
+        "body": null,
+        "breaking": false,
+        "raw": "0a96268eba8ea3ad3fc4650c96552f73a037a971 feat: add BullMQ workers for analytics, webhook dispatch, and position recalc"
+      },
+      {
+        "hash": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5",
+        "type": "feat",
+        "scope": null,
+        "subject": "add webhook signing, delivery service, and dispatch worker",
+        "body": null,
+        "breaking": false,
+        "raw": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5 feat: add webhook signing, delivery service, and dispatch worker"
+      },
+      {
+        "hash": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9",
+        "type": "feat",
+        "scope": null,
+        "subject": "add leaderboard and stats public endpoints with Redis caching",
+        "body": null,
+        "breaking": false,
+        "raw": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9 feat: add leaderboard and stats public endpoints with Redis caching"
+      },
+      {
+        "hash": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0",
+        "type": "feat",
+        "scope": null,
+        "subject": "add referral tracking, position bumping, and reward unlock logic",
+        "body": null,
+        "breaking": false,
+        "raw": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0 feat: add referral tracking, position bumping, and reward unlock logic"
+      },
+      {
+        "hash": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff",
+        "type": "feat",
+        "scope": null,
+        "subject": "add waitlist service, event emitter, and subscribe endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff feat: add waitlist service, event emitter, and subscribe endpoints"
+      },
+      {
+        "hash": "b0784c486401ec08dde58ab755da4f884d1c9092",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Fastify server with Redis, BullMQ, API key and JWT middleware",
+        "body": null,
+        "breaking": false,
+        "raw": "b0784c486401ec08dde58ab755da4f884d1c9092 feat: add Fastify server with Redis, BullMQ, API key and JWT middleware"
+      },
+      {
+        "hash": "4126692f12ee7b2e04d2239511a67595a480fabe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add database schema with all tables and drizzle config",
+        "body": null,
+        "breaking": false,
+        "raw": "4126692f12ee7b2e04d2239511a67595a480fabe feat: add database schema with all tables and drizzle config"
+      },
+      {
+        "hash": "6d0231da69eec73f1a21634fa5fc23abd7dac493",
+        "type": "feat",
+        "scope": null,
+        "subject": "add shared types, validation schemas, and constants",
+        "body": null,
+        "breaking": false,
+        "raw": "6d0231da69eec73f1a21634fa5fc23abd7dac493 feat: add shared types, validation schemas, and constants"
+      },
+      {
+        "hash": "0ab7faaf3793019d456904c5ee70dfca78b0d188",
+        "type": "feat",
+        "scope": null,
+        "subject": "scaffold monorepo with shared package and api app",
+        "body": null,
+        "breaking": false,
+        "raw": "0ab7faaf3793019d456904c5ee70dfca78b0d188 feat: scaffold monorepo with shared package and api app"
+      }
+    ],
+    "changelogOutput": "## [0.2.0]() (2026-03-29)\n\n### 🚀 Features\n\n- add vitest integration test config (5ee2f26)\n- add Dockerfile and Docker Compose production config (9fb8127)\n- add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings) (a3eedf7)\n- add @waitlist/react components (WaitlistForm, ReferralStatus, Provider) (8285ffb)\n- add @waitlist/widget drop-in embeddable script (9e33564)\n- add @waitlist/sdk headless client package (4d04b91)\n- add admin analytics endpoints (overview, timeseries, cohorts, channels) (ad5dfec)\n- add admin endpoints for subscribers, rewards, webhooks, experiments (5dd4f6f)\n- add admin auth (setup/login) and project CRUD endpoints (2347529)\n- add BullMQ workers for analytics, webhook dispatch, and position recalc (0a96268)\n- add webhook signing, delivery service, and dispatch worker (a80e04b)\n- add leaderboard and stats public endpoints with Redis caching (7951d40)\n- add referral tracking, position bumping, and reward unlock logic (9bc4adc)\n- add waitlist service, event emitter, and subscribe endpoints (06e31b3)\n- add Fastify server with Redis, BullMQ, API key and JWT middleware (b0784c4)\n- add database schema with all tables and drizzle config (4126692)\n- add shared types, validation schemas, and constants (6d0231d)\n- scaffold monorepo with shared package and api app (0ab7faa)\n\n### 🐛 Bug Fixes\n\n- run integration tests serially to avoid DB/Redis conflicts (5cfa9e2)\n\n### 📚 Documentation\n\n- add per-package README files (a0cc609)\n- add README, LICENSE (Apache 2.0), and CHANGELOG (51528e8)\n\n### ✅ Tests\n\n- add comprehensive integration test suite (4a1b8f5)\n"
+  },
+  {
+    "version": "shared@0.2.0",
+    "previousVersion": "shared@0.1.0",
+    "date": "2026-03-29T18:55:05.222Z",
+    "commits": [
+      {
+        "hash": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4",
+        "type": "docs",
+        "scope": null,
+        "subject": "add per-package README files",
+        "body": null,
+        "breaking": false,
+        "raw": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4 docs: add per-package README files"
+      },
+      {
+        "hash": "51528e865a93ded467680177a1ce03387e305bbc",
+        "type": "docs",
+        "scope": null,
+        "subject": "add README, LICENSE (Apache 2.0), and CHANGELOG",
+        "body": null,
+        "breaking": false,
+        "raw": "51528e865a93ded467680177a1ce03387e305bbc docs: add README, LICENSE (Apache 2.0), and CHANGELOG"
+      },
+      {
+        "hash": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047",
+        "type": "fix",
+        "scope": null,
+        "subject": "run integration tests serially to avoid DB/Redis conflicts",
+        "body": null,
+        "breaking": false,
+        "raw": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047 fix: run integration tests serially to avoid DB/Redis conflicts"
+      },
+      {
+        "hash": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc",
+        "type": "test",
+        "scope": null,
+        "subject": "add comprehensive integration test suite",
+        "body": null,
+        "breaking": false,
+        "raw": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc test: add comprehensive integration test suite"
+      },
+      {
+        "hash": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434",
+        "type": "feat",
+        "scope": null,
+        "subject": "add vitest integration test config",
+        "body": null,
+        "breaking": false,
+        "raw": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434 feat: add vitest integration test config"
+      },
+      {
+        "hash": "9fb8127850bb40fd4391994cb73d73f18ad7e52a",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Dockerfile and Docker Compose production config",
+        "body": null,
+        "breaking": false,
+        "raw": "9fb8127850bb40fd4391994cb73d73f18ad7e52a feat: add Dockerfile and Docker Compose production config"
+      },
+      {
+        "hash": "a3eedf76a0c41f075d84b972509d5821b6c7b004",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)",
+        "body": null,
+        "breaking": false,
+        "raw": "a3eedf76a0c41f075d84b972509d5821b6c7b004 feat: add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)"
+      },
+      {
+        "hash": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)",
+        "body": null,
+        "breaking": false,
+        "raw": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe feat: add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)"
+      },
+      {
+        "hash": "9e3356470d8d3346f118ab23105d03ae1218e79c",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/widget drop-in embeddable script",
+        "body": null,
+        "breaking": false,
+        "raw": "9e3356470d8d3346f118ab23105d03ae1218e79c feat: add @waitlist/widget drop-in embeddable script"
+      },
+      {
+        "hash": "4d04b91508881786b8d534a1d9be6e9793cd4bfd",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/sdk headless client package",
+        "body": null,
+        "breaking": false,
+        "raw": "4d04b91508881786b8d534a1d9be6e9793cd4bfd feat: add @waitlist/sdk headless client package"
+      },
+      {
+        "hash": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin analytics endpoints (overview, timeseries, cohorts, channels)",
+        "body": null,
+        "breaking": false,
+        "raw": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb feat: add admin analytics endpoints (overview, timeseries, cohorts, channels)"
+      },
+      {
+        "hash": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin endpoints for subscribers, rewards, webhooks, experiments",
+        "body": null,
+        "breaking": false,
+        "raw": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06 feat: add admin endpoints for subscribers, rewards, webhooks, experiments"
+      },
+      {
+        "hash": "2347529888baef5e3e413e38bcc27dc887d84f6e",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin auth (setup/login) and project CRUD endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "2347529888baef5e3e413e38bcc27dc887d84f6e feat: add admin auth (setup/login) and project CRUD endpoints"
+      },
+      {
+        "hash": "0a96268eba8ea3ad3fc4650c96552f73a037a971",
+        "type": "feat",
+        "scope": null,
+        "subject": "add BullMQ workers for analytics, webhook dispatch, and position recalc",
+        "body": null,
+        "breaking": false,
+        "raw": "0a96268eba8ea3ad3fc4650c96552f73a037a971 feat: add BullMQ workers for analytics, webhook dispatch, and position recalc"
+      },
+      {
+        "hash": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5",
+        "type": "feat",
+        "scope": null,
+        "subject": "add webhook signing, delivery service, and dispatch worker",
+        "body": null,
+        "breaking": false,
+        "raw": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5 feat: add webhook signing, delivery service, and dispatch worker"
+      },
+      {
+        "hash": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9",
+        "type": "feat",
+        "scope": null,
+        "subject": "add leaderboard and stats public endpoints with Redis caching",
+        "body": null,
+        "breaking": false,
+        "raw": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9 feat: add leaderboard and stats public endpoints with Redis caching"
+      },
+      {
+        "hash": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0",
+        "type": "feat",
+        "scope": null,
+        "subject": "add referral tracking, position bumping, and reward unlock logic",
+        "body": null,
+        "breaking": false,
+        "raw": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0 feat: add referral tracking, position bumping, and reward unlock logic"
+      },
+      {
+        "hash": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff",
+        "type": "feat",
+        "scope": null,
+        "subject": "add waitlist service, event emitter, and subscribe endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff feat: add waitlist service, event emitter, and subscribe endpoints"
+      },
+      {
+        "hash": "b0784c486401ec08dde58ab755da4f884d1c9092",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Fastify server with Redis, BullMQ, API key and JWT middleware",
+        "body": null,
+        "breaking": false,
+        "raw": "b0784c486401ec08dde58ab755da4f884d1c9092 feat: add Fastify server with Redis, BullMQ, API key and JWT middleware"
+      },
+      {
+        "hash": "4126692f12ee7b2e04d2239511a67595a480fabe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add database schema with all tables and drizzle config",
+        "body": null,
+        "breaking": false,
+        "raw": "4126692f12ee7b2e04d2239511a67595a480fabe feat: add database schema with all tables and drizzle config"
+      },
+      {
+        "hash": "6d0231da69eec73f1a21634fa5fc23abd7dac493",
+        "type": "feat",
+        "scope": null,
+        "subject": "add shared types, validation schemas, and constants",
+        "body": null,
+        "breaking": false,
+        "raw": "6d0231da69eec73f1a21634fa5fc23abd7dac493 feat: add shared types, validation schemas, and constants"
+      },
+      {
+        "hash": "0ab7faaf3793019d456904c5ee70dfca78b0d188",
+        "type": "feat",
+        "scope": null,
+        "subject": "scaffold monorepo with shared package and api app",
+        "body": null,
+        "breaking": false,
+        "raw": "0ab7faaf3793019d456904c5ee70dfca78b0d188 feat: scaffold monorepo with shared package and api app"
+      }
+    ],
+    "changelogOutput": "## [0.2.0]() (2026-03-29)\n\n### 🚀 Features\n\n- add vitest integration test config (5ee2f26)\n- add Dockerfile and Docker Compose production config (9fb8127)\n- add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings) (a3eedf7)\n- add @waitlist/react components (WaitlistForm, ReferralStatus, Provider) (8285ffb)\n- add @waitlist/widget drop-in embeddable script (9e33564)\n- add @waitlist/sdk headless client package (4d04b91)\n- add admin analytics endpoints (overview, timeseries, cohorts, channels) (ad5dfec)\n- add admin endpoints for subscribers, rewards, webhooks, experiments (5dd4f6f)\n- add admin auth (setup/login) and project CRUD endpoints (2347529)\n- add BullMQ workers for analytics, webhook dispatch, and position recalc (0a96268)\n- add webhook signing, delivery service, and dispatch worker (a80e04b)\n- add leaderboard and stats public endpoints with Redis caching (7951d40)\n- add referral tracking, position bumping, and reward unlock logic (9bc4adc)\n- add waitlist service, event emitter, and subscribe endpoints (06e31b3)\n- add Fastify server with Redis, BullMQ, API key and JWT middleware (b0784c4)\n- add database schema with all tables and drizzle config (4126692)\n- add shared types, validation schemas, and constants (6d0231d)\n- scaffold monorepo with shared package and api app (0ab7faa)\n\n### 🐛 Bug Fixes\n\n- run integration tests serially to avoid DB/Redis conflicts (5cfa9e2)\n\n### 📚 Documentation\n\n- add per-package README files (a0cc609)\n- add README, LICENSE (Apache 2.0), and CHANGELOG (51528e8)\n\n### ✅ Tests\n\n- add comprehensive integration test suite (4a1b8f5)\n"
+  },
+  {
+    "version": "sdk@0.2.0",
+    "previousVersion": "sdk@0.1.0",
+    "date": "2026-03-29T18:55:05.114Z",
+    "commits": [
+      {
+        "hash": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4",
+        "type": "docs",
+        "scope": null,
+        "subject": "add per-package README files",
+        "body": null,
+        "breaking": false,
+        "raw": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4 docs: add per-package README files"
+      },
+      {
+        "hash": "51528e865a93ded467680177a1ce03387e305bbc",
+        "type": "docs",
+        "scope": null,
+        "subject": "add README, LICENSE (Apache 2.0), and CHANGELOG",
+        "body": null,
+        "breaking": false,
+        "raw": "51528e865a93ded467680177a1ce03387e305bbc docs: add README, LICENSE (Apache 2.0), and CHANGELOG"
+      },
+      {
+        "hash": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047",
+        "type": "fix",
+        "scope": null,
+        "subject": "run integration tests serially to avoid DB/Redis conflicts",
+        "body": null,
+        "breaking": false,
+        "raw": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047 fix: run integration tests serially to avoid DB/Redis conflicts"
+      },
+      {
+        "hash": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc",
+        "type": "test",
+        "scope": null,
+        "subject": "add comprehensive integration test suite",
+        "body": null,
+        "breaking": false,
+        "raw": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc test: add comprehensive integration test suite"
+      },
+      {
+        "hash": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434",
+        "type": "feat",
+        "scope": null,
+        "subject": "add vitest integration test config",
+        "body": null,
+        "breaking": false,
+        "raw": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434 feat: add vitest integration test config"
+      },
+      {
+        "hash": "9fb8127850bb40fd4391994cb73d73f18ad7e52a",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Dockerfile and Docker Compose production config",
+        "body": null,
+        "breaking": false,
+        "raw": "9fb8127850bb40fd4391994cb73d73f18ad7e52a feat: add Dockerfile and Docker Compose production config"
+      },
+      {
+        "hash": "a3eedf76a0c41f075d84b972509d5821b6c7b004",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)",
+        "body": null,
+        "breaking": false,
+        "raw": "a3eedf76a0c41f075d84b972509d5821b6c7b004 feat: add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)"
+      },
+      {
+        "hash": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)",
+        "body": null,
+        "breaking": false,
+        "raw": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe feat: add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)"
+      },
+      {
+        "hash": "9e3356470d8d3346f118ab23105d03ae1218e79c",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/widget drop-in embeddable script",
+        "body": null,
+        "breaking": false,
+        "raw": "9e3356470d8d3346f118ab23105d03ae1218e79c feat: add @waitlist/widget drop-in embeddable script"
+      },
+      {
+        "hash": "4d04b91508881786b8d534a1d9be6e9793cd4bfd",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/sdk headless client package",
+        "body": null,
+        "breaking": false,
+        "raw": "4d04b91508881786b8d534a1d9be6e9793cd4bfd feat: add @waitlist/sdk headless client package"
+      },
+      {
+        "hash": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin analytics endpoints (overview, timeseries, cohorts, channels)",
+        "body": null,
+        "breaking": false,
+        "raw": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb feat: add admin analytics endpoints (overview, timeseries, cohorts, channels)"
+      },
+      {
+        "hash": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin endpoints for subscribers, rewards, webhooks, experiments",
+        "body": null,
+        "breaking": false,
+        "raw": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06 feat: add admin endpoints for subscribers, rewards, webhooks, experiments"
+      },
+      {
+        "hash": "2347529888baef5e3e413e38bcc27dc887d84f6e",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin auth (setup/login) and project CRUD endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "2347529888baef5e3e413e38bcc27dc887d84f6e feat: add admin auth (setup/login) and project CRUD endpoints"
+      },
+      {
+        "hash": "0a96268eba8ea3ad3fc4650c96552f73a037a971",
+        "type": "feat",
+        "scope": null,
+        "subject": "add BullMQ workers for analytics, webhook dispatch, and position recalc",
+        "body": null,
+        "breaking": false,
+        "raw": "0a96268eba8ea3ad3fc4650c96552f73a037a971 feat: add BullMQ workers for analytics, webhook dispatch, and position recalc"
+      },
+      {
+        "hash": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5",
+        "type": "feat",
+        "scope": null,
+        "subject": "add webhook signing, delivery service, and dispatch worker",
+        "body": null,
+        "breaking": false,
+        "raw": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5 feat: add webhook signing, delivery service, and dispatch worker"
+      },
+      {
+        "hash": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9",
+        "type": "feat",
+        "scope": null,
+        "subject": "add leaderboard and stats public endpoints with Redis caching",
+        "body": null,
+        "breaking": false,
+        "raw": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9 feat: add leaderboard and stats public endpoints with Redis caching"
+      },
+      {
+        "hash": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0",
+        "type": "feat",
+        "scope": null,
+        "subject": "add referral tracking, position bumping, and reward unlock logic",
+        "body": null,
+        "breaking": false,
+        "raw": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0 feat: add referral tracking, position bumping, and reward unlock logic"
+      },
+      {
+        "hash": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff",
+        "type": "feat",
+        "scope": null,
+        "subject": "add waitlist service, event emitter, and subscribe endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff feat: add waitlist service, event emitter, and subscribe endpoints"
+      },
+      {
+        "hash": "b0784c486401ec08dde58ab755da4f884d1c9092",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Fastify server with Redis, BullMQ, API key and JWT middleware",
+        "body": null,
+        "breaking": false,
+        "raw": "b0784c486401ec08dde58ab755da4f884d1c9092 feat: add Fastify server with Redis, BullMQ, API key and JWT middleware"
+      },
+      {
+        "hash": "4126692f12ee7b2e04d2239511a67595a480fabe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add database schema with all tables and drizzle config",
+        "body": null,
+        "breaking": false,
+        "raw": "4126692f12ee7b2e04d2239511a67595a480fabe feat: add database schema with all tables and drizzle config"
+      },
+      {
+        "hash": "6d0231da69eec73f1a21634fa5fc23abd7dac493",
+        "type": "feat",
+        "scope": null,
+        "subject": "add shared types, validation schemas, and constants",
+        "body": null,
+        "breaking": false,
+        "raw": "6d0231da69eec73f1a21634fa5fc23abd7dac493 feat: add shared types, validation schemas, and constants"
+      },
+      {
+        "hash": "0ab7faaf3793019d456904c5ee70dfca78b0d188",
+        "type": "feat",
+        "scope": null,
+        "subject": "scaffold monorepo with shared package and api app",
+        "body": null,
+        "breaking": false,
+        "raw": "0ab7faaf3793019d456904c5ee70dfca78b0d188 feat: scaffold monorepo with shared package and api app"
+      }
+    ],
+    "changelogOutput": "## [0.2.0]() (2026-03-29)\n\n### 🚀 Features\n\n- add vitest integration test config (5ee2f26)\n- add Dockerfile and Docker Compose production config (9fb8127)\n- add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings) (a3eedf7)\n- add @waitlist/react components (WaitlistForm, ReferralStatus, Provider) (8285ffb)\n- add @waitlist/widget drop-in embeddable script (9e33564)\n- add @waitlist/sdk headless client package (4d04b91)\n- add admin analytics endpoints (overview, timeseries, cohorts, channels) (ad5dfec)\n- add admin endpoints for subscribers, rewards, webhooks, experiments (5dd4f6f)\n- add admin auth (setup/login) and project CRUD endpoints (2347529)\n- add BullMQ workers for analytics, webhook dispatch, and position recalc (0a96268)\n- add webhook signing, delivery service, and dispatch worker (a80e04b)\n- add leaderboard and stats public endpoints with Redis caching (7951d40)\n- add referral tracking, position bumping, and reward unlock logic (9bc4adc)\n- add waitlist service, event emitter, and subscribe endpoints (06e31b3)\n- add Fastify server with Redis, BullMQ, API key and JWT middleware (b0784c4)\n- add database schema with all tables and drizzle config (4126692)\n- add shared types, validation schemas, and constants (6d0231d)\n- scaffold monorepo with shared package and api app (0ab7faa)\n\n### 🐛 Bug Fixes\n\n- run integration tests serially to avoid DB/Redis conflicts (5cfa9e2)\n\n### 📚 Documentation\n\n- add per-package README files (a0cc609)\n- add README, LICENSE (Apache 2.0), and CHANGELOG (51528e8)\n\n### ✅ Tests\n\n- add comprehensive integration test suite (4a1b8f5)\n"
+  },
+  {
+    "version": "react@0.2.0",
+    "previousVersion": "react@0.1.0",
+    "date": "2026-03-29T18:55:05.012Z",
+    "commits": [
+      {
+        "hash": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4",
+        "type": "docs",
+        "scope": null,
+        "subject": "add per-package README files",
+        "body": null,
+        "breaking": false,
+        "raw": "a0cc609de1b46d0b3caf0d3b4bc3451b0ca393d4 docs: add per-package README files"
+      },
+      {
+        "hash": "51528e865a93ded467680177a1ce03387e305bbc",
+        "type": "docs",
+        "scope": null,
+        "subject": "add README, LICENSE (Apache 2.0), and CHANGELOG",
+        "body": null,
+        "breaking": false,
+        "raw": "51528e865a93ded467680177a1ce03387e305bbc docs: add README, LICENSE (Apache 2.0), and CHANGELOG"
+      },
+      {
+        "hash": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047",
+        "type": "fix",
+        "scope": null,
+        "subject": "run integration tests serially to avoid DB/Redis conflicts",
+        "body": null,
+        "breaking": false,
+        "raw": "5cfa9e2607d7ce7cbff293f78c65a19ebc594047 fix: run integration tests serially to avoid DB/Redis conflicts"
+      },
+      {
+        "hash": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc",
+        "type": "test",
+        "scope": null,
+        "subject": "add comprehensive integration test suite",
+        "body": null,
+        "breaking": false,
+        "raw": "4a1b8f5b0f1f7cb3daa4154fcc4f79e7923416dc test: add comprehensive integration test suite"
+      },
+      {
+        "hash": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434",
+        "type": "feat",
+        "scope": null,
+        "subject": "add vitest integration test config",
+        "body": null,
+        "breaking": false,
+        "raw": "5ee2f26a5b5c1f25af3efb5e5accbd43ec776434 feat: add vitest integration test config"
+      },
+      {
+        "hash": "9fb8127850bb40fd4391994cb73d73f18ad7e52a",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Dockerfile and Docker Compose production config",
+        "body": null,
+        "breaking": false,
+        "raw": "9fb8127850bb40fd4391994cb73d73f18ad7e52a feat: add Dockerfile and Docker Compose production config"
+      },
+      {
+        "hash": "a3eedf76a0c41f075d84b972509d5821b6c7b004",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)",
+        "body": null,
+        "breaking": false,
+        "raw": "a3eedf76a0c41f075d84b972509d5821b6c7b004 feat: add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings)"
+      },
+      {
+        "hash": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)",
+        "body": null,
+        "breaking": false,
+        "raw": "8285ffb3a27cbd7c49fd55a37d73e14977785fbe feat: add @waitlist/react components (WaitlistForm, ReferralStatus, Provider)"
+      },
+      {
+        "hash": "9e3356470d8d3346f118ab23105d03ae1218e79c",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/widget drop-in embeddable script",
+        "body": null,
+        "breaking": false,
+        "raw": "9e3356470d8d3346f118ab23105d03ae1218e79c feat: add @waitlist/widget drop-in embeddable script"
+      },
+      {
+        "hash": "4d04b91508881786b8d534a1d9be6e9793cd4bfd",
+        "type": "feat",
+        "scope": null,
+        "subject": "add @waitlist/sdk headless client package",
+        "body": null,
+        "breaking": false,
+        "raw": "4d04b91508881786b8d534a1d9be6e9793cd4bfd feat: add @waitlist/sdk headless client package"
+      },
+      {
+        "hash": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin analytics endpoints (overview, timeseries, cohorts, channels)",
+        "body": null,
+        "breaking": false,
+        "raw": "ad5dfecaaf1549c8e6b58a54af65ff64f7697efb feat: add admin analytics endpoints (overview, timeseries, cohorts, channels)"
+      },
+      {
+        "hash": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin endpoints for subscribers, rewards, webhooks, experiments",
+        "body": null,
+        "breaking": false,
+        "raw": "5dd4f6fccd679596611aa22c3d84a10fe9da6b06 feat: add admin endpoints for subscribers, rewards, webhooks, experiments"
+      },
+      {
+        "hash": "2347529888baef5e3e413e38bcc27dc887d84f6e",
+        "type": "feat",
+        "scope": null,
+        "subject": "add admin auth (setup/login) and project CRUD endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "2347529888baef5e3e413e38bcc27dc887d84f6e feat: add admin auth (setup/login) and project CRUD endpoints"
+      },
+      {
+        "hash": "0a96268eba8ea3ad3fc4650c96552f73a037a971",
+        "type": "feat",
+        "scope": null,
+        "subject": "add BullMQ workers for analytics, webhook dispatch, and position recalc",
+        "body": null,
+        "breaking": false,
+        "raw": "0a96268eba8ea3ad3fc4650c96552f73a037a971 feat: add BullMQ workers for analytics, webhook dispatch, and position recalc"
+      },
+      {
+        "hash": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5",
+        "type": "feat",
+        "scope": null,
+        "subject": "add webhook signing, delivery service, and dispatch worker",
+        "body": null,
+        "breaking": false,
+        "raw": "a80e04ba2752cbcbfe56d3ebd0e094ef6e1bdac5 feat: add webhook signing, delivery service, and dispatch worker"
+      },
+      {
+        "hash": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9",
+        "type": "feat",
+        "scope": null,
+        "subject": "add leaderboard and stats public endpoints with Redis caching",
+        "body": null,
+        "breaking": false,
+        "raw": "7951d406f2e7c1e73c8ade1dd16efc4d9a46b5b9 feat: add leaderboard and stats public endpoints with Redis caching"
+      },
+      {
+        "hash": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0",
+        "type": "feat",
+        "scope": null,
+        "subject": "add referral tracking, position bumping, and reward unlock logic",
+        "body": null,
+        "breaking": false,
+        "raw": "9bc4adcb174b450b7817aeb00f0a90f0809df4b0 feat: add referral tracking, position bumping, and reward unlock logic"
+      },
+      {
+        "hash": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff",
+        "type": "feat",
+        "scope": null,
+        "subject": "add waitlist service, event emitter, and subscribe endpoints",
+        "body": null,
+        "breaking": false,
+        "raw": "06e31b3f182da08e6001f1568e8c7e1c3a62f1ff feat: add waitlist service, event emitter, and subscribe endpoints"
+      },
+      {
+        "hash": "b0784c486401ec08dde58ab755da4f884d1c9092",
+        "type": "feat",
+        "scope": null,
+        "subject": "add Fastify server with Redis, BullMQ, API key and JWT middleware",
+        "body": null,
+        "breaking": false,
+        "raw": "b0784c486401ec08dde58ab755da4f884d1c9092 feat: add Fastify server with Redis, BullMQ, API key and JWT middleware"
+      },
+      {
+        "hash": "4126692f12ee7b2e04d2239511a67595a480fabe",
+        "type": "feat",
+        "scope": null,
+        "subject": "add database schema with all tables and drizzle config",
+        "body": null,
+        "breaking": false,
+        "raw": "4126692f12ee7b2e04d2239511a67595a480fabe feat: add database schema with all tables and drizzle config"
+      },
+      {
+        "hash": "6d0231da69eec73f1a21634fa5fc23abd7dac493",
+        "type": "feat",
+        "scope": null,
+        "subject": "add shared types, validation schemas, and constants",
+        "body": null,
+        "breaking": false,
+        "raw": "6d0231da69eec73f1a21634fa5fc23abd7dac493 feat: add shared types, validation schemas, and constants"
+      },
+      {
+        "hash": "0ab7faaf3793019d456904c5ee70dfca78b0d188",
+        "type": "feat",
+        "scope": null,
+        "subject": "scaffold monorepo with shared package and api app",
+        "body": null,
+        "breaking": false,
+        "raw": "0ab7faaf3793019d456904c5ee70dfca78b0d188 feat: scaffold monorepo with shared package and api app"
+      }
+    ],
+    "changelogOutput": "## [0.2.0]() (2026-03-29)\n\n### 🚀 Features\n\n- add vitest integration test config (5ee2f26)\n- add Dockerfile and Docker Compose production config (9fb8127)\n- add admin dashboard with all pages (overview, subscribers, rewards, experiments, webhooks, settings) (a3eedf7)\n- add @waitlist/react components (WaitlistForm, ReferralStatus, Provider) (8285ffb)\n- add @waitlist/widget drop-in embeddable script (9e33564)\n- add @waitlist/sdk headless client package (4d04b91)\n- add admin analytics endpoints (overview, timeseries, cohorts, channels) (ad5dfec)\n- add admin endpoints for subscribers, rewards, webhooks, experiments (5dd4f6f)\n- add admin auth (setup/login) and project CRUD endpoints (2347529)\n- add BullMQ workers for analytics, webhook dispatch, and position recalc (0a96268)\n- add webhook signing, delivery service, and dispatch worker (a80e04b)\n- add leaderboard and stats public endpoints with Redis caching (7951d40)\n- add referral tracking, position bumping, and reward unlock logic (9bc4adc)\n- add waitlist service, event emitter, and subscribe endpoints (06e31b3)\n- add Fastify server with Redis, BullMQ, API key and JWT middleware (b0784c4)\n- add database schema with all tables and drizzle config (4126692)\n- add shared types, validation schemas, and constants (6d0231d)\n- scaffold monorepo with shared package and api app (0ab7faa)\n\n### 🐛 Bug Fixes\n\n- run integration tests serially to avoid DB/Redis conflicts (5cfa9e2)\n\n### 📚 Documentation\n\n- add per-package README files (a0cc609)\n- add README, LICENSE (Apache 2.0), and CHANGELOG (51528e8)\n\n### ✅ Tests\n\n- add comprehensive integration test suite (4a1b8f5)\n"
+  }
+]

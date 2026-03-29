@@ -1,0 +1,30 @@
+{
+  "versionSource": "package.json",
+  "plugins": [
+    "bumpcraft-plugin-conventional-commits",
+    "bumpcraft-plugin-changelog-md"
+  ],
+  "branches": {
+    "release": ["main", "master"],
+    "preRelease": {
+      "develop": "beta",
+      "next": "rc"
+    }
+  },
+  "commitTypes": {
+    "feat": "minor",
+    "fix": "patch",
+    "perf": "patch",
+    "refactor": "none",
+    "chore": "none",
+    "docs": "none",
+    "test": "none",
+    "style": "none"
+  },
+  "policies": {
+    "requireApproval": [],
+    "autoRelease": ["patch", "minor", "major"],
+    "freezeAfter": null,
+    "maxBumpPerDay": null
+  }
+}

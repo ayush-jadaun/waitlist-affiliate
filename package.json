@@ -20,6 +20,7 @@
     "db:studio": "turbo run db:studio --filter=@waitlist/api"
   },
   "devDependencies": {
+    "bumpcraft": "file:..\\semvar\\bumpcraft",
     "turbo": "^2.8.21"
   }
 }
