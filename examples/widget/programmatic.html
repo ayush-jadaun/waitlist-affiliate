@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waitlist Widget — Programmatic Mount</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f1f5f9;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .page-header {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .page-header h1 { font-size: 1.5rem; color: #0f172a; margin-bottom: 0.5rem; }
+    .page-header p  { color: #475569; line-height: 1.6; }
+
+    /* -----------------------------------------------------------------------
+       Two-column layout — show multiple widgets on one page
+       ----------------------------------------------------------------------- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.04);
+    }
+
+    .card-header {
+      padding: 1rem 1.25rem 0;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+    }
+
+    /* Containers that mountWidget() will attach to */
+    #widget-product-a,
+    #widget-product-b { display: block; }
+
+    /* -----------------------------------------------------------------------
+       Conditional mount demo
+       ----------------------------------------------------------------------- */
+    .controls {
+      max-width: 700px;
+      margin: 2rem auto 0;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.4rem;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    #btn-mount   { background: #4a9eff; color: #fff; }
+    #btn-unmount { background: #f43f5e; color: #fff; }
+
+    .dynamic-area {
+      max-width: 700px;
+      margin: 1rem auto 0;
+      min-height: 80px;
+    }
+
+    #dynamic-container { width: 100%; }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Programmatic Widget Mount</h1>
+    <p>
+      Use <code>mountWidget()</code> when you need to control exactly where and
+      when the widget appears — multiple widgets on one page, lazy loading,
+      conditional rendering based on user state, etc.
+    </p>
+  </div>
+
+  <!-- ======================================================================
+       Part 1: Multiple widgets on one page
+       Each widget needs its own container element.
+       ====================================================================== -->
+  <div class="grid">
+    <div class="card">
+      <div class="card-header">Product A — light theme</div>
+      <div id="widget-product-a"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">Product B — dark theme</div>
+      <div id="widget-product-b" style="background:#0f172a; border-radius:0 0 0.75rem 0.75rem;"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Part 2: Conditional / on-demand mount
+       Useful for modals, slide-ins, or tab panels.
+       ====================================================================== -->
+  <div class="controls">
+    <button id="btn-mount">Mount Widget</button>
+    <button id="btn-unmount">Unmount Widget</button>
+  </div>
+  <div class="dynamic-area">
+    <div id="dynamic-container"></div>
+  </div>
+
+
+  <script type="module">
+    import { mountWidget } from "http://localhost:3400/widget.js";
+
+    // ------------------------------------------------------------------
+    // Part 1: Mount two widgets into specific containers
+    // ------------------------------------------------------------------
+
+    // Widget for Product A (light)
+    mountWidget({
+      apiKey:     "wl_pk_your-api-key",
+      apiUrl:     "http://localhost:3400",
+      theme:      "light",
+      accent:     "#4a9eff",
+      title:      "Join the Product A Waitlist",
+      subtitle:   "Get notified the moment Product A launches.",
+      buttonText: "Join Now",
+      container:  document.getElementById("widget-product-a"),
+    });
+
+    // Widget for Product B (dark)
+    mountWidget({
+      apiKey:     "wl_pk_your-api-key-product-b",   // separate project = separate API key
+      apiUrl:     "http://localhost:3400",
+      theme:      "dark",
+      accent:     "#a855f7",
+      title:      "Join the Product B Beta",
+      subtitle:   "Limited beta spots. Be among the first to try it.",
+      buttonText: "Request Beta Access",
+      container:  document.getElementById("widget-product-b"),
+    });
+
+    // ------------------------------------------------------------------
+    // Part 2: On-demand / conditional mount
+    //
+    // mountWidget() attaches a Shadow DOM to the container element.
+    // To "unmount" we clear the container's innerHTML and remove the
+    // shadow root by replacing the element (the simplest approach).
+    // ------------------------------------------------------------------
+
+    let mounted = false;
+
+    document.getElementById("btn-mount").addEventListener("click", () => {
+      if (mounted) return;
+
+      const container = document.getElementById("dynamic-container");
+
+      // Replace the container element to get a fresh node (removes shadow root)
+      const fresh = document.createElement("div");
+      fresh.id = "dynamic-container";
+      container.replaceWith(fresh);
+
+      mountWidget({
+        apiKey:     "wl_pk_your-api-key",
+        apiUrl:     "http://localhost:3400",
+        theme:      "light",
+        accent:     "#10b981",
+        title:      "Limited Time Offer",
+        subtitle:   "This popup appeared on demand!",
+        buttonText: "Grab My Spot",
+        container:  fresh,
+      });
+
+      mounted = true;
+    });
+
+    document.getElementById("btn-unmount").addEventListener("click", () => {
+      if (!mounted) return;
+
+      const container = document.getElementById("dynamic-container");
+      // Replace with a fresh, shadow-root-free element
+      const fresh = document.createElement("div");
+      fresh.id = "dynamic-container";
+      container.replaceWith(fresh);
+
+      mounted = false;
+    });
+
+    // ------------------------------------------------------------------
+    // Pattern: Lazy mount when element scrolls into view
+    // ------------------------------------------------------------------
+    const lazyTarget = document.querySelector("#widget-product-b");
+    // (Already mounted above — this snippet shows the IntersectionObserver pattern)
+    //
+    // const observer = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //       mountWidget({ ..., container: entry.target });
+    //       observer.unobserve(entry.target);
+    //     }
+    //   });
+    // }, { threshold: 0.1 });
+    // observer.observe(document.getElementById("lazy-container"));
+  </script>
+
+</body>
+</html>

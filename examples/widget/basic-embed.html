@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waitlist Widget — Basic Embed</title>
+  <style>
+    /* -----------------------------------------------------------------------
+       Page chrome — not part of the widget itself
+       ----------------------------------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem;
+    }
+
+    .demo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .demo-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #666;
+    }
+
+    /* Light section background */
+    .section-light { background: #f8f9fa; }
+    body.section-light { background: #ffffff; }
+
+    /* Dark section background */
+    .dark-bg {
+      background: #0f172a;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 100%;
+      max-width: 520px;
+    }
+    .dark-bg .demo-label { color: #94a3b8; }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================
+       EXAMPLE 1: Light theme (default)
+       ======================================================================
+       The simplest possible embed — just add the script tag with data
+       attributes. The widget auto-mounts to document.body.
+       ====================================================================== -->
+  <div class="demo-section">
+    <span class="demo-label">Light Theme (default)</span>
+
+    <!--
+      data-api-key   — Your project's public API key (starts with wl_pk_)
+      data-api-url   — Base URL of the API server
+      data-theme     — "light" (default) or "dark"
+
+      The widget reads these attributes and mounts itself when the DOM is ready.
+    -->
+    <script
+      src="http://localhost:3400/widget.js"
+      data-api-key="wl_pk_your-api-key"
+      data-api-url="http://localhost:3400"
+      data-theme="light"
+    ></script>
+  </div>
+
+
+  <!-- ======================================================================
+       EXAMPLE 2: Dark theme
+       ======================================================================
+       To show a second widget on the same page you MUST use mountWidget()
+       programmatically (see programmatic.html). The auto-mount script tag
+       below is for demonstration of the data-theme="dark" attribute only —
+       use it on a page that has a single widget.
+       ====================================================================== -->
+  <div class="dark-bg">
+    <div class="demo-section">
+      <span class="demo-label">Dark Theme</span>
+
+      <!--
+        Replace the src with your CDN URL in production, e.g.:
+          src="https://cdn.jsdelivr.net/npm/@waitlist/widget@latest/dist/widget.js"
+      -->
+      <!--
+        NOTE: Only one auto-mount script tag should be on a page.
+              This second block is here to show the dark theme attribute.
+              See examples/widget/programmatic.html for multi-widget pages.
+      -->
+      <!--
+      <script
+        src="http://localhost:3400/widget.js"
+        data-api-key="wl_pk_your-api-key"
+        data-api-url="http://localhost:3400"
+        data-theme="dark"
+      ></script>
+      -->
+
+      <!-- Inline placeholder so this static demo is self-contained -->
+      <div id="dark-widget-mount"></div>
+      <script type="module">
+        // Using mountWidget() to attach to a specific container element
+        // (same as what the script tag auto-mount does internally)
+        import { mountWidget } from "http://localhost:3400/widget.js";
+
+        mountWidget({
+          apiKey:  "wl_pk_your-api-key",
+          apiUrl:  "http://localhost:3400",
+          theme:   "dark",
+          container: document.getElementById("dark-widget-mount"),
+        });
+      </script>
+    </div>
+  </div>
+
+
+  <!-- ======================================================================
+       PRODUCTION NOTES
+       ======================================================================
+
+  1. Replace the src URL with your production CDN or self-hosted URL:
+
+       src="https://cdn.jsdelivr.net/npm/@waitlist/widget@1.0.0/dist/widget.umd.js"
+
+  2. The widget uses Shadow DOM so its styles are fully isolated.
+     It will never conflict with your page's CSS.
+
+  3. The widget automatically reads ?ref=<code> from the current URL
+     so referral codes are tracked without any extra code.
+
+  4. For a Content Security Policy (CSP) add the widget's origin to
+     script-src and connect-src:
+
+       Content-Security-Policy:
+         script-src 'self' https://cdn.jsdelivr.net;
+         connect-src 'self' https://api.myapp.com;
+
+  ====================================================================== -->
+
+</body>
+</html>

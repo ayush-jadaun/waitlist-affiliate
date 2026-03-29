@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waitlist Widget — Custom Styling</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.7;
+      margin-bottom: -1rem;
+    }
+
+    .widget-wrap {
+      width: 100%;
+      max-width: 440px;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    All customization is done via data-* attributes on the script tag,
+    or via the config object passed to mountWidget().
+
+    Available options:
+      data-theme        "light" | "dark"                   default: "light"
+      data-accent       Any CSS colour value               default: "#4a9eff"
+      data-title        Widget heading text                default: "Join the Waitlist"
+      data-subtitle     Sub-heading text                   default: "Be the first to know when we launch."
+      data-button-text  Submit button label                default: "Join Now"
+  -->
+
+  <!-- ======================================================================
+       Example 1 — SaaS product: purple accent, custom copy
+       ====================================================================== -->
+  <h2>SaaS product — purple brand colour</h2>
+  <div class="widget-wrap" id="mount-saas"></div>
+
+  <!-- ======================================================================
+       Example 2 — E-commerce: green accent, urgency copy, dark theme
+       ====================================================================== -->
+  <h2>E-commerce — dark theme, green accent, urgency copy</h2>
+  <div class="widget-wrap" id="mount-ecom"></div>
+
+  <!-- ======================================================================
+       Example 3 — Mobile app: coral accent, emoji in copy
+       ====================================================================== -->
+  <h2>Mobile app — coral accent, playful copy</h2>
+  <div class="widget-wrap" id="mount-app"></div>
+
+
+  <script type="module">
+    import { mountWidget } from "http://localhost:3400/widget.js";
+
+    // ------------------------------------------------------------------
+    // Example 1: SaaS product
+    // ------------------------------------------------------------------
+    mountWidget({
+      apiKey:      "wl_pk_your-api-key",
+      apiUrl:      "http://localhost:3400",
+      theme:       "light",
+      accent:      "#7c3aed",              // purple — matches brand colour
+      title:       "Early Access",
+      subtitle:    "Join 2,400+ teams already on the waitlist. Be first when we open the doors.",
+      buttonText:  "Request Access",
+      container:   document.getElementById("mount-saas"),
+    });
+
+    // ------------------------------------------------------------------
+    // Example 2: E-commerce — dark theme with urgency
+    // ------------------------------------------------------------------
+    mountWidget({
+      apiKey:      "wl_pk_your-api-key",
+      apiUrl:      "http://localhost:3400",
+      theme:       "dark",
+      accent:      "#10b981",              // emerald green
+      title:       "Members-Only Launch",
+      subtitle:    "Only 500 spots available. Reserve yours now before they're gone.",
+      buttonText:  "Reserve My Spot",
+      container:   document.getElementById("mount-ecom"),
+    });
+
+    // ------------------------------------------------------------------
+    // Example 3: Mobile app — coral with playful copy
+    // ------------------------------------------------------------------
+    mountWidget({
+      apiKey:      "wl_pk_your-api-key",
+      apiUrl:      "http://localhost:3400",
+      theme:       "light",
+      accent:      "#f43f5e",              // rose / coral
+      title:       "Coming Soon to iOS & Android",
+      subtitle:    "Be among the first to try it. Refer friends to skip the line!",
+      buttonText:  "Get Early Access",
+      container:   document.getElementById("mount-app"),
+    });
+  </script>
+
+  <!--
+    NOTES ON STYLING:
+
+    The widget renders inside a Shadow DOM, so external CSS cannot reach
+    widget internals. The only customisation knobs exposed are:
+
+      accent      — Controls button background, link colour, and focus rings.
+                    Accepts any valid CSS colour: hex, rgb(), hsl(), or a
+                    CSS custom property like "var(--brand)".
+
+      theme       — "light"  → white card, dark text
+                    "dark"   → near-black card (#1e1e2e), light text
+
+    If you need deeper customisation (different font, border-radius, etc.)
+    use the React component (@waitlist/react) instead — it renders into the
+    regular DOM and can be styled with Tailwind, CSS Modules, or any CSS-in-JS.
+  -->
+
+</body>
+</html>
