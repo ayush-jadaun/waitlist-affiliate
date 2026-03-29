@@ -455,6 +455,79 @@ CORS_ORIGINS=https://yourdomain.com
 
 ---
 
+## Documentation
+
+Extensive architecture docs live in [`docs/architecture/`](docs/architecture/):
+
+| Document | Description |
+|---|---|
+| [System Overview](docs/architecture/overview.md) | Architecture diagrams, data flow sequences, package dependency graph, technology rationale |
+| [Database Schema](docs/architecture/database.md) | ER diagram of all 13 tables, column-by-column reference, indexes, query patterns |
+| [API Reference](docs/architecture/api.md) | Full reference for all 22 endpoints — request/response schemas, curl examples, status codes |
+| [Webhook System](docs/architecture/webhooks.md) | All 9 events with payloads, HMAC verification in Node.js + Python, retry policy |
+| [Background Workers](docs/architecture/workers.md) | Worker architecture, job formats, processing flowcharts, BullMQ configuration |
+| [Waitlist Modes](docs/architecture/modes.md) | Prelaunch / gated / viral comparison, status flow diagrams, full config reference |
+| [Referral Engine](docs/architecture/referral-engine.md) | Referral flow, position bump algorithm, reward unlocks, fraud prevention |
+| [Analytics](docs/architecture/analytics.md) | Metrics tracked, aggregation pipeline, cache strategy, cohort analysis |
+| [Security](docs/architecture/security.md) | Auth flows, hashing, HMAC signing, rate limiting, production hardening checklist |
+| [Deployment](docs/architecture/deployment.md) | Docker local/production, env vars, scaling, health checks, backups |
+
+---
+
+## Examples
+
+Runnable examples for every package and integration pattern live in [`examples/`](examples/):
+
+### SDK (`@waitlist/sdk`)
+
+| Example | Description |
+|---|---|
+| [basic-usage.ts](examples/sdk/basic-usage.ts) | Subscribe, check status, leaderboard, stats |
+| [referral-flow.ts](examples/sdk/referral-flow.ts) | Complete referral chain — User A refers B, C, D |
+| [error-handling.ts](examples/sdk/error-handling.ts) | Try/catch patterns, retry logic, graceful degradation |
+
+### Widget (`@waitlist/widget`)
+
+| Example | Description |
+|---|---|
+| [basic-embed.html](examples/widget/basic-embed.html) | Script tag embed with light and dark themes |
+| [custom-styling.html](examples/widget/custom-styling.html) | Three branded configs (SaaS, e-commerce, mobile app) |
+| [programmatic.html](examples/widget/programmatic.html) | `mountWidget()` API, multiple widgets, lazy loading |
+
+### React (`@waitlist/react`)
+
+| Example | Description |
+|---|---|
+| [basic-form.tsx](examples/react/basic-form.tsx) | WaitlistForm with provider, success/error callbacks |
+| [standalone-form.tsx](examples/react/standalone-form.tsx) | WaitlistForm without provider (direct props) |
+| [referral-dashboard.tsx](examples/react/referral-dashboard.tsx) | Full dashboard — position, progress bar, share buttons |
+| [next-js-integration.tsx](examples/react/next-js-integration.tsx) | Next.js App Router integration |
+
+### API & Webhooks
+
+| Example | Description |
+|---|---|
+| [curl-examples.sh](examples/api/curl-examples.sh) | curl commands for every single endpoint |
+| [webhook-receiver.ts](examples/api/webhook-receiver.ts) | Express webhook receiver with HMAC verification |
+| [webhook-receiver-python.py](examples/api/webhook-receiver-python.py) | Flask webhook receiver with HMAC verification |
+
+### Complete Integrations
+
+| Example | Description |
+|---|---|
+| [Next.js App](examples/integrations/nextjs-complete/) | Full Next.js App Router project — layout, pages, webhook route handler |
+| [Admin Setup Guide](examples/admin/setup-guide.md) | Step-by-step from cold start to monitoring |
+
+### Deployment Guides
+
+| Guide | Description |
+|---|---|
+| [Docker Production](examples/deployment/docker-production.md) | Production Compose, Nginx, TLS, monitoring, backups |
+| [Railway](examples/deployment/railway.md) | One-click Railway deploy with plugins |
+| [Vercel (Admin)](examples/deployment/vercel-admin.md) | Deploy admin dashboard to Vercel |
+
+---
+
 ## Testing
 
 ### Run All Tests
@@ -530,7 +603,8 @@ waitlist-referral/
 │   ├── react/                      # @waitlist/react
 │   └── shared/                     # @waitlist/shared (types, schemas, constants)
 ├── docs/
-│   └── superpowers/specs/          # Design specs
+│   └── architecture/               # In-depth architecture documentation
+├── examples/                        # Runnable examples and guides
 ├── docker-compose.yml
 ├── Dockerfile
 ├── turbo.json
